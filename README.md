@@ -52,3 +52,16 @@ cd wallpapers
 sudo ./install-gnome-backgrounds.sh
 
 
+pakku -S gnome-browser-connector
+1. https://extensions.gnome.org/extension/307/dash-to-dock/
+2. https://extensions.gnome.org/extension/3193/blur-my-shell/
+3. https://extensions.gnome.org/extension/97/coverflow-alt-tab/
+4. https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/
+5. https://extensions.gnome.org/extension/3724/net-speed-simplified/
+6. https://extensions.gnome.org/extension/5088/muteunmute/
+7. https://extensions.gnome.org/extension/4679/burn-my-windows/
+8. https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/
+9. https://extensions.gnome.org/extension/5401/gtk3-theme-switcher/
+10. https://extensions.gnome.org/extension/3210/compiz-windows-effect/
+11. https://extensions.gnome.org/extension/4105/notification-banner-position/
+12. https://extensions.gnome.org/extension/4977/sur-clock/
