@@ -36,3 +36,5 @@ sudo ./tweaks.sh -g
 4. posisi tombol di kiri
 5. Appearance
 6. ganti shell dan legacy application ke whitesur
+
+1. pakku -S gdm-settings
