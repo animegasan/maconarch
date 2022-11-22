@@ -74,3 +74,5 @@ Install Software dan driver bluetooth
 3. pakku -S youtube-music-bin
 4. sudo pacman -S libreoffice
 5. sudo pacman -S bluez bluez-utils
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
