@@ -51,6 +51,8 @@ git clone https://github.com/vinceliuice/WhiteSur-wallpapers wallpapers
 cd wallpapers
 sudo ./install-gnome-backgrounds.sh
 
+cursor
+pakku -S apple_cursor
 
 pakku -S gnome-browser-connector
 1. https://extensions.gnome.org/extension/307/dash-to-dock/
@@ -65,3 +67,10 @@ pakku -S gnome-browser-connector
 10. https://extensions.gnome.org/extension/3210/compiz-windows-effect/
 11. https://extensions.gnome.org/extension/4105/notification-banner-position/
 12. https://extensions.gnome.org/extension/4977/sur-clock/
+
+Install Software dan driver bluetooth
+1. pakku -S whatsapp-for-linux
+2. sudo pacman -S telegram-desktop
+3. pakku -S youtube-music-bin
+4. sudo pacman -S libreoffice
+5. sudo pacman -S bluez bluez-utils
