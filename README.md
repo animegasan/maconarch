@@ -49,6 +49,6 @@ cd icons
 Wallpapper
 git clone https://github.com/vinceliuice/WhiteSur-wallpapers wallpapers
 cd wallpapers
-./install-wallpapers.sh
+sudo ./install-gnome-backgrounds.sh
 
 
