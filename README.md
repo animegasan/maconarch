@@ -38,4 +38,4 @@ sudo ./tweaks.sh -g
 6. ganti shell dan legacy application ke whitesur
 
 1. pakku -S gdm-settings
-2. sudo rm -r /etc/motd /etc/dconf/db/gdm.d/01-logo
+2. sudo rm -r /etc/motd
