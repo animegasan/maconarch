@@ -15,3 +15,20 @@ a. sudo pacman -S base-devel git
 b. git clone https://aur.archlinux.org/pakku.git
 c. cd pakku
 d. makepkg -si
+
+Themes
+a. sudo pacman -S gnome-tweaks
+install themes
+a. https://github.com/vinceliuice/WhiteSur-gtk-theme
+b. git clone https://github.com/vinceliuice/WhiteSur-gtk-theme themes
+c. cd themes
+d. ./install.sh -m -l -HD -N glassy
+
+1. buka extension
+2. aktifkan user-themes
+1. buka tweek
+2. windows titlebars
+3. aktifkan semuanya
+4. posisi tombol di kiri
+5. Appearance
+6. ganti shell dan legacy application ke whitesur
