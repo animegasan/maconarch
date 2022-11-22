@@ -39,3 +39,16 @@ sudo ./tweaks.sh -g
 
 1. pakku -S gdm-settings
 2. sudo rm -r /etc/motd
+
+
+Icons
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme icons
+cd icons
+./install.sh
+
+Wallpapper
+git clone https://github.com/vinceliuice/WhiteSur-wallpapers wallpapers
+cd wallpapers
+./install-wallpapers.sh
+
+
