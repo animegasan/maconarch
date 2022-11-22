@@ -22,7 +22,11 @@ install themes
 a. https://github.com/vinceliuice/WhiteSur-gtk-theme
 b. git clone https://github.com/vinceliuice/WhiteSur-gtk-theme themes
 c. cd themes
-d. ./install.sh -m -l -HD -N glassy
+d. ./install.sh -m -HD -N glassy
+f. ./install.sh -l -c Light
+g. ./install.sh -l
+install gdm
+sudo ./tweaks.sh -g
 
 1. buka extension
 2. aktifkan user-themes
