@@ -78,3 +78,5 @@ sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 pakku -S ttf-ms-fonts
 pakku -S instagram-nativefier
+sudo pacman -Rsu lftp
+sudo pacman -S alacarte
