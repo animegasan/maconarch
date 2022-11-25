@@ -17,10 +17,6 @@ cd pakku
 makepkg -si
 ```
 
-1. pakku -S gdm-settings
-2. sudo rm -r /etc/motd
-3. sudo rm -r /usr/share/pixmaps/archlinux-logo.png
-
 ## Themes Mac on Arch Linux
 
 
@@ -59,6 +55,8 @@ cd themes
 ### Add Gnome Display Manager Themes
 ```yaml
 sudo ./tweaks.sh -g
+sudo rm -r /etc/motd
+sudo rm -r /usr/share/pixmaps/archlinux-logo.png
 ```
 
 ### Add Wallpapers
