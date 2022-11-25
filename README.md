@@ -131,7 +131,16 @@ Node.js
 psudo acman -S nodejs npm
 
 Java
-sudo pacman -S jre-openjdk jdk-openjdk 
+sudo pacman -S jre-openjdk jdk-openjdk
+
+Virtual Box
+sudo pacman -S virtualbox
+
+Netbeans
+sudo pacman -S netbeans
+
+Cisco Packet Tracer
+https://aur.archlinux.org/packages/packettracer
 ```
 
 ### Arch User Repository (AUR) Software 
@@ -162,6 +171,9 @@ pakku -S visual-studio-code-bin
 
 yEd Graph Editor
 pakku -S yed
+
+XAMP
+pakku -S xampp
 ```
 
 ### Remove Software
