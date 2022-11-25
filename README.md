@@ -115,6 +115,9 @@ sudo pacman -S vlc
 Libre Office
 sudo pacman -S libreoffice
 
+Spelling Checker English
+sudo pacman -S hunspell-en_us
+
 System Monitoring
 sudo pacman -S gnome-system-monitor
 
@@ -138,6 +141,9 @@ pakku -S zoom
 
 Microsoft Fonts
 pakku -S ttf-ms-fonts
+
+Spelling Checker Indonesia
+pakku -S hunspell-id-git
 
 Stacer
 pakku -S stacer
