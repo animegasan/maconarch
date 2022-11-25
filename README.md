@@ -179,5 +179,6 @@ pakku -S ttf-ms-fonts
 
 ### Remove Software
 ```yaml
-sudo pacman -Rsu lftp
+sudo pacman -Rsu lftp grub-customizer alacarte
+
 ```
