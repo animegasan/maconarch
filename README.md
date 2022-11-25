@@ -10,11 +10,7 @@ d. sudo grub-mkconfig -o /boot/grub/grub.cfg
 1. sudo pacman -S grub-customizer
 2. 
 
-1. Install Pakku
-a. sudo pacman -S base-devel git
-b. git clone https://aur.archlinux.org/pakku.git
-c. cd pakku
-d. makepkg -si
+
 
 Themes
 a. sudo pacman -S gnome-tweaks
@@ -68,26 +64,64 @@ pakku -S gnome-browser-connector
 11. https://extensions.gnome.org/extension/4105/notification-banner-position/
 12. https://extensions.gnome.org/extension/4977/sur-clock/
 
-Install Software dan driver bluetooth
-1. pakku -S whatsapp-for-linux
-2. sudo pacman -S telegram-desktop
-3. pakku -S youtube-music-bin
-4. sudo pacman -S libreoffice
-5. sudo pacman -S bluez bluez-utils
+## Install/Remove Drivers and Software
+Bluetooth Drivers
+```yaml
+sudo pacman -S bluez bluez-utils
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
-pakku -S ttf-ms-fonts
+```
+Pakku AUR Helper 
+```yaml
+sudo pacman -S base-devel git
+git clone https://aur.archlinux.org/pakku.git
+cd pakku
+makepkg -si
+```
+Arch User Repository (AUR) Software 
+```yaml
+Whatsapp Desktop
+pakku -S whatsapp-for-linux
+
+Instagram Desktop
 pakku -S instagram-nativefier
-sudo pacman -Rsu lftp
-sudo pacman -S alacarte
+
+YouTube Music Desktop
+pakku -S youtube-music-bin
+
+Zoom
 pakku -S zoom
+
+Microsoft Fonts
+pakku -S ttf-ms-fonts
+```
+Arch Package Software
+```yaml
+Telegram Desktop
+sudo pacman -S telegram-desktop
+
+Discord
 sudo pacman -S discord
+
+VLC
 sudo pacman -S vlc
+
+Libre Office
+sudo pacman -S libreoffice
+
+System Monitoring
 sudo pacman -S gnome-system-monitor
 
-## Add No Display for Apps in Gnome Launcher
-Comment in Apps.desktop
+Main Menu Editor
+sudo pacman -S alacarte
+```
+Remove Software
+```yaml
+sudo pacman -Rsu lftp
+```
 
+## Add No Display for Apps in Gnome Launchers
+Comment in Apps.desktop
 ```yaml
 NoDisplay=true
 Hidden=true
