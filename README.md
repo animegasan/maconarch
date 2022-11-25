@@ -83,12 +83,17 @@ sudo pacman -S alacarte
 pakku -S zoom
 sudo pacman -S discord
 sudo pacman -S vlc
+sudo pacman -S gnome-system-monitor
 
 Add no display
 NoDisplay=true
 Hidden=true
 sudo nano /usr/share/applications/avahi-discover.desktop
 sudo nano /usr/share/applications/bssh.desktop
+sudo nano /usr/share/applications/lstopo.desktop
+sudo nano /usr/share/applications/qv4l2.desktop
+sudo nano /usr/share/applications/qvidcap.desktop
+sudo nano /usr/share/applications/bvnc.desktop
+sudo nano /usr/share/applications/libreoffice-startcenter.desktop
 sudo nano /usr/share/applications/
-
 sudo systemctl restart gdm
