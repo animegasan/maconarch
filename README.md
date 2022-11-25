@@ -22,6 +22,9 @@ makepkg -si
 
 ## Themes Mac on Arch Linux
 
+
+### Reinstall Grub
+
 ### Add Grub Themes
 ```yaml
 sudo pacman -S grub-customizer
