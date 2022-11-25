@@ -19,6 +19,7 @@ makepkg -si
 
 1. pakku -S gdm-settings
 2. sudo rm -r /etc/motd
+3. sudo rm -r /usr/share/pixmaps/archlinux-logo.png
 
 ## Themes Mac on Arch Linux
 
