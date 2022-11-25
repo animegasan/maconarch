@@ -19,7 +19,6 @@ makepkg -si
 
 ## Themes Mac on Arch Linux
 
-
 ### Reinstall Grub
 
 ### Add Grub Themes
@@ -38,9 +37,9 @@ sudo nano 45_uefi-firmware
 sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
-### Install Tweeks and Git
+### Install Tweeks
 ```yaml
-sudo pacman -S gnome-tweaks git
+sudo pacman -S gnome-tweaks
 ```
 
 ### Add Themes
@@ -129,9 +128,6 @@ pakku -S google-chrome
 Whatsapp Desktop
 pakku -S whatsapp-for-linux
 
-Instagram Desktop
-pakku -S instagram-nativefier
-
 YouTube Music Desktop
 pakku -S youtube-music-bin
 
@@ -179,6 +175,14 @@ sudo nano /usr/share/applications/lstopo.desktop
 YouTube Music Dekstop
 sudo nano /usr/share/applications/youtube-music.desktop
 Icon=youtube-music-desktop-app
+
+Whatsapp Desktop
+sudo nano /usr/share/applications/com.github.eneshecan.WhatsAppForLinux.desktop
+Name=WhatsApp
+
+Telegram Desktop
+sudo nano /usr/share/applications/telegramdesktop.desktop
+Name=Telegram
 
 VLC
 sudo nano /usr/share/applications/vlc.desktop
