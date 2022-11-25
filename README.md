@@ -138,6 +138,9 @@ pakku -S zoom
 
 Microsoft Fonts
 pakku -S ttf-ms-fonts
+
+Stacer
+pakku -S stacer
 ```
 
 ### Remove Software
