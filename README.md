@@ -132,24 +132,6 @@ pakku -S gnome-browser-connector
 
 ## Install and Remove Software
 
-### Arch User Repository (AUR) Software 
-```yaml
-Whatsapp Desktop
-pakku -S whatsapp-for-linux
-
-Instagram Desktop
-pakku -S instagram-nativefier
-
-YouTube Music Desktop
-pakku -S youtube-music-bin
-
-Zoom
-pakku -S zoom
-
-Microsoft Fonts
-pakku -S ttf-ms-fonts
-```
-
 ### Arch Package Software
 ```yaml
 Telegram Desktop
@@ -169,6 +151,27 @@ sudo pacman -S gnome-system-monitor
 
 Main Menu Editor
 sudo pacman -S alacarte
+```
+
+### Arch User Repository (AUR) Software 
+```yaml
+Google Chrome
+pakku -S google-chrome
+
+Whatsapp Desktop
+pakku -S whatsapp-for-linux
+
+Instagram Desktop
+pakku -S instagram-nativefier
+
+YouTube Music Desktop
+pakku -S youtube-music-bin
+
+Zoom
+pakku -S zoom
+
+Microsoft Fonts
+pakku -S ttf-ms-fonts
 ```
 
 ### Remove Software
