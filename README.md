@@ -176,9 +176,6 @@ sudo nano /usr/share/applications/qvidcap.desktop
 Hardware Locality lstopo
 sudo nano /usr/share/applications/lstopo.desktop
 
-LibreOffice Start Center
-sudo nano /usr/share/applications/libreoffice-startcenter.desktop
-
 YouTube Music Dekstop
 sudo nano /usr/share/applications/youtube-music.desktop
 Icon=youtube-music-desktop-app
@@ -191,4 +188,30 @@ Gedit
 sudo nano /usr/share/applications/org.gnome.gedit.desktop
 Name=Notes
 
+LibreOffice Start Center
+sudo nano /usr/share/applications/libreoffice-startcenter.desktop
+
+LibreOffice Base
+sudo nano /usr/share/applications/libreoffice-base.desktop
+Name=Base
+
+LibreOffice Calc
+sudo nano /usr/share/applications/libreoffice-calc.desktop
+Name=Calc
+
+LibreOffice Draw
+sudo nano /usr/share/applications/libreoffice-draw.desktop
+Name=Draw
+
+LibreOffice Impress
+sudo nano /usr/share/applications/libreoffice-impress.desktop
+Name=Impress
+
+LibreOffice Math
+sudo nano /usr/share/applications/libreoffice-math.desktop
+Name=Math
+
+LibreOffice Writer
+sudo nano /usr/share/applications/libreoffice-writer.desktop
+Name=Writer
 ```
