@@ -1,31 +1,24 @@
-# maconarch
-Make Arch Linux like Mac OS
+# Make Arch Linux like Mac OS
 
-1. buka extension
-2. aktifkan user-themes
-1. buka tweek
-2. windows titlebars
-3. aktifkan semuanya
-4. posisi tombol di kiri
-5. Appearance
-6. ganti shell dan legacy application ke whitesur
+## Install Drivers and Pakku AUR Helper
+
+### Bluetooth Drivers
+```yaml
+sudo pacman -S bluez bluez-utils
+sudo systemctl start bluetooth.service
+sudo systemctl enable bluetooth.service
+```
+
+### Pakku AUR Helper
+```yaml
+sudo pacman -S base-devel git
+git clone https://aur.archlinux.org/pakku.git
+cd pakku
+makepkg -si
+```
 
 1. pakku -S gdm-settings
 2. sudo rm -r /etc/motd
-
-pakku -S gnome-browser-connector
-1. https://extensions.gnome.org/extension/307/dash-to-dock/
-2. https://extensions.gnome.org/extension/3193/blur-my-shell/
-3. https://extensions.gnome.org/extension/97/coverflow-alt-tab/
-4. https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/
-5. https://extensions.gnome.org/extension/3724/net-speed-simplified/
-6. https://extensions.gnome.org/extension/5088/muteunmute/
-7. https://extensions.gnome.org/extension/4679/burn-my-windows/
-8. https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/
-9. https://extensions.gnome.org/extension/5401/gtk3-theme-switcher/
-10. https://extensions.gnome.org/extension/3210/compiz-windows-effect/
-11. https://extensions.gnome.org/extension/4105/notification-banner-position/
-12. https://extensions.gnome.org/extension/4977/sur-clock/
 
 ## Themes Mac on Arch Linux
 
@@ -83,22 +76,61 @@ cd icons
 pakku -S apple_cursor
 ```
 
-## Install/Remove Drivers and Software
+## Add No Display for Apps in Gnome Launchers
 
-### Bluetooth Drivers
+### Comment in Apps.desktop
 ```yaml
-sudo pacman -S bluez bluez-utils
-sudo systemctl start bluetooth.service
-sudo systemctl enable bluetooth.service
+NoDisplay=true
+Hidden=true
 ```
 
-### Pakku AUR Helper 
+### List Apps
 ```yaml
-sudo pacman -S base-devel git
-git clone https://aur.archlinux.org/pakku.git
-cd pakku
-makepkg -si
+Avahi Zeroconf Browser
+sudo nano /usr/share/applications/avahi-discover.desktop
+
+Avahi SSH Server Browser
+sudo nano /usr/share/applications/bssh.desktop
+
+Avahi VNC Server Browser
+sudo nano /usr/share/applications/bvnc.desktop
+
+Qt V4L2 test Utility
+sudo nano /usr/share/applications/qv4l2.desktop
+
+Qt V4L2 video capture utility
+sudo nano /usr/share/applications/qvidcap.desktop
+
+Hardware Locality lstopo
+sudo nano /usr/share/applications/lstopo.desktop
+
+LibreOffice Start Center
+sudo nano /usr/share/applications/libreoffice-startcenter.desktop
 ```
+
+### Add Extension
+```yaml
+pakku -S gnome-browser-connector
+```
+#### List Extension
+
+##### Themes
+1. <a href="https://extensions.gnome.org/extension/307/dash-to-dock/" target="_blank">Dash to Dock</a>
+2. <a href="https://extensions.gnome.org/extension/3193/blur-my-shell/" target="_blank">Blur my Shell</a>
+3. <a href="https://extensions.gnome.org/extension/3724/net-speed-simplified/" target="_blank">Net speed Simplified</a>
+4. <a href="https://extensions.gnome.org/extension/4977/sur-clock/" target="_blank">Sur Clock</a>
+
+##### System
+1. <a href="https://extensions.gnome.org/extension/97/coverflow-alt-tab/" target="_blank">Coverflow Alt-Tab</a>
+2. <a href="https://extensions.gnome.org/extension/3740/compiz-alike-magic-lamp-effect/" target="_blank">Compiz alike magic lamp effect</a>
+3. <a href="https://extensions.gnome.org/extension/3210/compiz-windows-effect/" target="_blank">Compiz windows effect</a>
+4. <a href="https://extensions.gnome.org/extension/4679/burn-my-windows/" target="_blank">Burn My Windows</a>
+5. <a href="https://extensions.gnome.org/extension/5088/muteunmute/" target="_blank">Mute/Unmute</a>
+6. <a href="https://extensions.gnome.org/extension/4105/notification-banner-position/" target="_blank">Notification Banner Position</a>
+7. <a href="https://extensions.gnome.org/extension/3956/gnome-fuzzy-app-search/" target="_blank">GNOME Fuzzy App Search</a>
+8. <a href="https://extensions.gnome.org/extension/5401/gtk3-theme-switcher/" target="_blank">GTK3 Theme Switcher</a>
+
+## Install and Remove Software
 
 ### Arch User Repository (AUR) Software 
 ```yaml
@@ -142,36 +174,4 @@ sudo pacman -S alacarte
 ### Remove Software
 ```yaml
 sudo pacman -Rsu lftp
-```
-
-## Add No Display for Apps in Gnome Launchers
-
-Comment in Apps.desktop
-```yaml
-NoDisplay=true
-Hidden=true
-```
-
-### List Apps
-```yaml
-Avahi Zeroconf Browser
-sudo nano /usr/share/applications/avahi-discover.desktop
-
-Avahi SSH Server Browser
-sudo nano /usr/share/applications/bssh.desktop
-
-Avahi VNC Server Browser
-sudo nano /usr/share/applications/bvnc.desktop
-
-Qt V4L2 test Utility
-sudo nano /usr/share/applications/qv4l2.desktop
-
-Qt V4L2 video capture utility
-sudo nano /usr/share/applications/qvidcap.desktop
-
-Hardware Locality lstopo
-sudo nano /usr/share/applications/lstopo.desktop
-
-LibreOffice Start Center
-sudo nano /usr/share/applications/libreoffice-startcenter.desktop
 ```
