@@ -1,28 +1,5 @@
 # maconarch
 Make Arch Linux like Mac OS
-1. Buat resolusi Grub jadi 1920x1080
-2. Tambahkan class di efi
-a. cd /etc/grub.d
-b. sudo nano 45_uefi-firmware
-c. menuentry '$LABEL' ke menuentry '$LABEL' --class efi
-d. sudo grub-mkconfig -o /boot/grub/grub.cfg
-
-1. sudo pacman -S grub-customizer
-2. 
-
-
-
-Themes
-a. sudo pacman -S gnome-tweaks
-install themes
-a. https://github.com/vinceliuice/WhiteSur-gtk-theme
-b. git clone https://github.com/vinceliuice/WhiteSur-gtk-theme themes
-c. cd themes
-d. ./install.sh -m -HD -N glassy
-f. ./install.sh -l -c Light
-g. ./install.sh -l
-install gdm
-sudo ./tweaks.sh -g
 
 1. buka extension
 2. aktifkan user-themes
@@ -35,20 +12,6 @@ sudo ./tweaks.sh -g
 
 1. pakku -S gdm-settings
 2. sudo rm -r /etc/motd
-
-
-Icons
-git clone https://github.com/vinceliuice/WhiteSur-icon-theme icons
-cd icons
-./install.sh
-
-Wallpapper
-git clone https://github.com/vinceliuice/WhiteSur-wallpapers wallpapers
-cd wallpapers
-sudo ./install-gnome-backgrounds.sh
-
-cursor
-pakku -S apple_cursor
 
 pakku -S gnome-browser-connector
 1. https://extensions.gnome.org/extension/307/dash-to-dock/
@@ -64,21 +27,80 @@ pakku -S gnome-browser-connector
 11. https://extensions.gnome.org/extension/4105/notification-banner-position/
 12. https://extensions.gnome.org/extension/4977/sur-clock/
 
+## Themes Mac on Arch Linux
+
+### Add Grub Themes
+```yaml
+sudo pacman -S grub-customizer
+
+Buat resolusi Grub jadi 1920x1080
+
+```
+### Add Class for Efi Icons
+
+Add `--class efi` after `menuentry '$LABEL'`
+```yaml
+cd /etc/grub.d
+sudo nano 45_uefi-firmware
+sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
+
+### Install Tweeks and Git
+```yaml
+sudo pacman -S gnome-tweaks git
+```
+
+### Add Themes
+```yaml
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme themes
+cd themes
+./install.sh -m -HD -N glassy
+./install.sh -l -c Light
+./install.sh -l
+```
+
+### Add Gnome Display Manager Themes
+```yaml
+sudo ./tweaks.sh -g
+```
+
+### Add Wallpapers
+```yaml
+git clone https://github.com/vinceliuice/WhiteSur-wallpapers wallpapers
+cd wallpapers
+sudo ./install-gnome-backgrounds.sh
+```
+
+### Add Icons
+```yaml
+git clone https://github.com/vinceliuice/WhiteSur-icon-theme icons
+cd icons
+./install.sh
+```
+
+### Add Cursor
+```yaml
+pakku -S apple_cursor
+```
+
 ## Install/Remove Drivers and Software
-Bluetooth Drivers
+
+### Bluetooth Drivers
 ```yaml
 sudo pacman -S bluez bluez-utils
 sudo systemctl start bluetooth.service
 sudo systemctl enable bluetooth.service
 ```
-Pakku AUR Helper 
+
+### Pakku AUR Helper 
 ```yaml
 sudo pacman -S base-devel git
 git clone https://aur.archlinux.org/pakku.git
 cd pakku
 makepkg -si
 ```
-Arch User Repository (AUR) Software 
+
+### Arch User Repository (AUR) Software 
 ```yaml
 Whatsapp Desktop
 pakku -S whatsapp-for-linux
@@ -95,7 +117,8 @@ pakku -S zoom
 Microsoft Fonts
 pakku -S ttf-ms-fonts
 ```
-Arch Package Software
+
+### Arch Package Software
 ```yaml
 Telegram Desktop
 sudo pacman -S telegram-desktop
@@ -115,18 +138,21 @@ sudo pacman -S gnome-system-monitor
 Main Menu Editor
 sudo pacman -S alacarte
 ```
-Remove Software
+
+### Remove Software
 ```yaml
 sudo pacman -Rsu lftp
 ```
 
 ## Add No Display for Apps in Gnome Launchers
+
 Comment in Apps.desktop
 ```yaml
 NoDisplay=true
 Hidden=true
 ```
-List Apps
+
+### List Apps
 ```yaml
 Avahi Zeroconf Browser
 sudo nano /usr/share/applications/avahi-discover.desktop
