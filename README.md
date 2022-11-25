@@ -83,3 +83,12 @@ sudo pacman -S alacarte
 pakku -S zoom
 sudo pacman -S discord
 sudo pacman -S vlc
+
+Add no display
+NoDisplay=true
+Hidden=true
+sudo nano /usr/share/applications/avahi-discover.desktop
+sudo nano /usr/share/applications/bssh.desktop
+sudo nano /usr/share/applications/
+
+sudo systemctl restart gdm
