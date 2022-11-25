@@ -82,3 +82,4 @@ sudo pacman -Rsu lftp
 sudo pacman -S alacarte
 pakku -S zoom
 sudo pacman -S discord
+sudo pacman -S vlc
