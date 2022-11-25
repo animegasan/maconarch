@@ -123,6 +123,15 @@ sudo pacman -S gnome-system-monitor
 
 Disk Usage Analyzer
 sudo pacman -S baobab
+
+R
+sudo pacman -S r
+
+Node.js
+psudo acman -S nodejs npm
+
+Java
+sudo pacman -S jre-openjdk jdk-openjdk 
 ```
 
 ### Arch User Repository (AUR) Software 
@@ -147,6 +156,12 @@ pakku -S hunspell-id-git
 
 Stacer
 pakku -S stacer
+
+Visual Studio Code
+pakku -S visual-studio-code-bin
+
+yEd Graph Editor
+pakku -S yed
 ```
 
 ### Remove Software
