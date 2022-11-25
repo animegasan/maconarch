@@ -80,3 +80,4 @@ pakku -S ttf-ms-fonts
 pakku -S instagram-nativefier
 sudo pacman -Rsu lftp
 sudo pacman -S alacarte
+pakku -S zoom
