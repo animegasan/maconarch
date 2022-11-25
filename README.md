@@ -85,15 +85,33 @@ sudo pacman -S discord
 sudo pacman -S vlc
 sudo pacman -S gnome-system-monitor
 
-Add no display
+## Add No Display for Apps in Gnome Launcher
+Comment in Apps.desktop
+
+```yaml
 NoDisplay=true
 Hidden=true
+```
+List Apps
+```yaml
+Avahi Zeroconf Browser
 sudo nano /usr/share/applications/avahi-discover.desktop
+
+Avahi SSH Server Browser
 sudo nano /usr/share/applications/bssh.desktop
-sudo nano /usr/share/applications/lstopo.desktop
-sudo nano /usr/share/applications/qv4l2.desktop
-sudo nano /usr/share/applications/qvidcap.desktop
+
+Avahi VNC Server Browser
 sudo nano /usr/share/applications/bvnc.desktop
+
+Qt V4L2 test Utility
+sudo nano /usr/share/applications/qv4l2.desktop
+
+Qt V4L2 video capture utility
+sudo nano /usr/share/applications/qvidcap.desktop
+
+Hardware Locality lstopo
+sudo nano /usr/share/applications/lstopo.desktop
+
+LibreOffice Start Center
 sudo nano /usr/share/applications/libreoffice-startcenter.desktop
-sudo nano /usr/share/applications/
-sudo systemctl restart gdm
+```
