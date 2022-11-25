@@ -78,38 +78,6 @@ cd icons
 pakku -S apple_cursor
 ```
 
-## Add No Display for Apps in Gnome Launchers
-
-### Comment in Apps.desktop
-```yaml
-NoDisplay=true
-Hidden=true
-```
-
-### List Apps
-```yaml
-Avahi Zeroconf Browser
-sudo nano /usr/share/applications/avahi-discover.desktop
-
-Avahi SSH Server Browser
-sudo nano /usr/share/applications/bssh.desktop
-
-Avahi VNC Server Browser
-sudo nano /usr/share/applications/bvnc.desktop
-
-Qt V4L2 test Utility
-sudo nano /usr/share/applications/qv4l2.desktop
-
-Qt V4L2 video capture utility
-sudo nano /usr/share/applications/qvidcap.desktop
-
-Hardware Locality lstopo
-sudo nano /usr/share/applications/lstopo.desktop
-
-LibreOffice Start Center
-sudo nano /usr/share/applications/libreoffice-startcenter.desktop
-```
-
 ### Add Extension
 ```yaml
 pakku -S gnome-browser-connector
@@ -151,8 +119,6 @@ sudo pacman -S libreoffice
 System Monitoring
 sudo pacman -S gnome-system-monitor
 
-Main Menu Editor
-sudo pacman -S alacarte
 ```
 
 ### Arch User Repository (AUR) Software 
@@ -179,5 +145,50 @@ pakku -S ttf-ms-fonts
 ### Remove Software
 ```yaml
 sudo pacman -Rsu lftp grub-customizer alacarte
+
+```
+
+## Setting Display Apps in Gnome Launchers
+
+### Comment in Apps.desktop
+```yaml
+NoDisplay=true
+Hidden=true
+```
+
+### List Apps
+```yaml
+Avahi Zeroconf Browser
+sudo nano /usr/share/applications/avahi-discover.desktop
+
+Avahi SSH Server Browser
+sudo nano /usr/share/applications/bssh.desktop
+
+Avahi VNC Server Browser
+sudo nano /usr/share/applications/bvnc.desktop
+
+Qt V4L2 test Utility
+sudo nano /usr/share/applications/qv4l2.desktop
+
+Qt V4L2 video capture utility
+sudo nano /usr/share/applications/qvidcap.desktop
+
+Hardware Locality lstopo
+sudo nano /usr/share/applications/lstopo.desktop
+
+LibreOffice Start Center
+sudo nano /usr/share/applications/libreoffice-startcenter.desktop
+
+YouTube Music Dekstop
+sudo nano /usr/share/applications/youtube-music.desktop
+Icon=youtube-music-desktop-app
+
+VLC
+sudo nano /usr/share/applications/vlc.desktop
+Name=Media Player
+
+Gedit
+sudo nano /usr/share/applications/org.gnome.gedit.desktop
+Name=Notes
 
 ```
