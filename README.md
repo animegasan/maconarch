@@ -118,6 +118,8 @@ sudo pacman -S libreoffice
 System Monitoring
 sudo pacman -S gnome-system-monitor
 
+Disk Usage Analyzer
+sudo pacman -S baobab
 ```
 
 ### Arch User Repository (AUR) Software 
@@ -171,6 +173,9 @@ sudo nano /usr/share/applications/qvidcap.desktop
 
 Hardware Locality lstopo
 sudo nano /usr/share/applications/lstopo.desktop
+
+Disk
+sudo nano /usr/share/applications/org.gnome.DiskUtility.desktop
 
 YouTube Music Dekstop
 sudo nano /usr/share/applications/youtube-music.desktop
